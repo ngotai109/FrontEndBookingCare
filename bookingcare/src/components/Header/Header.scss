@@ -1,0 +1,65 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixin";
+@import "../../assets/scss/base";
+
+.header {
+    background-color: $header-color;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    &__logo {
+        width: 200px;
+        height: 40px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: row;
+        text-align: left;
+
+        @include respond(md) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include respond(sm) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+
+.logout-link {
+    background: none; // bỏ nền
+    border: none; // bỏ viền
+    padding: 0; // bỏ padding mặc định của button
+    margin: 0;
+    color: $primary-color; // màu chữ giống link
+    font-size: 1rem;
+    cursor: pointer; // con trỏ pointer khi hover
+    font-family: inherit; // kế thừa font header
+    text-decoration: none; // không gạch chân
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+        color: darken($primary-color, 20%); // đổi màu khi hover
+        text-decoration: none; // vẫn không gạch chân
+    }
+
+    &:active {
+        color: darken($primary-color, 15%);
+    }
+}
