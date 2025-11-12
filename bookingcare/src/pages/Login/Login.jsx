@@ -14,7 +14,7 @@ export default function Login() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     Email: username,
-                    Password: password // nhớ đúng key như backend
+                    Password: password
                 }),
             });
 
@@ -28,11 +28,9 @@ export default function Login() {
                     accessToken: data.token,
                     refreshToken: data.refreshToken
                 });
-
                 navigate("/home");
             } else {
-                // Có thể hiện thông báo chi tiết từ backend
-                alert(data?.message || "Đăng nhập thất bại. Vui lòng kiểm tra lại tài khoản/mật khẩu!");
+                alert(data?.message || "Đăng nhập thất bại !. Vui lòng kiểm tra lại tài khoản/mật khẩu!");
             }
         } catch (err) {
             console.error("Lỗi:", err);
