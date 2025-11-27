@@ -1,0 +1,45 @@
+.smarthealth-navbar {
+    background: #35C253; // hoặc màu bạn muốn
+    padding: 8px 16px;
+
+    .sh-logo {
+        height: 40px; // 👈 chỉnh chiều cao cho hợp navbar
+        width: auto; // giữ đúng tỉ lệ ảnh
+        object-fit: contain;
+    }
+
+    .nav-icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .user-icon {
+        font-size: 26px;
+    }
+
+    .search-box {
+        position: relative;
+
+        .search-input {
+            padding-left: 30px;
+            border-radius: 20px;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #666;
+        }
+    }
+
+    .noti-badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+}

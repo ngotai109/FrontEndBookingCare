@@ -1,0 +1,71 @@
+.dashboard-home {
+    h2 {
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: #136d2b;
+    }
+
+    .stat-card {
+        padding: 22px;
+        border-radius: 12px;
+        background: #fff;
+        transition: all 0.25s ease;
+        border: none;
+        border-left: 6px solid #ddd; // default
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .icon-box {
+            font-size: 2rem;
+            padding: 12px;
+            border-radius: 6px;
+            background: #f4f6f8;
+        }
+
+        h5 {
+            font-size: 1.05rem;
+            color: #6c757d;
+            margin-bottom: 4px;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+    }
+
+    /* Màu riêng border-left */
+    .doctor {
+        border-left: 6px solid #0ea5e9; // xanh dương
+
+        .icon-box {
+            color: #0ea5e9;
+        }
+    }
+
+    .patient {
+        border-left: 6px solid #22c55e; // xanh lá
+
+        .icon-box {
+            color: #22c55e;
+        }
+    }
+
+    .schedule {
+        border-left: 6px solid #f59e0b; // vàng cam
+
+        .icon-box {
+            color: #f59e0b;
+        }
+    }
+
+    .cancel {
+        border-left: 6px solid #ef4444; // đỏ
+
+        .icon-box {
+            color: #ef4444;
+        }
+    }
+}

@@ -1,6 +1,6 @@
+import {API_BASE_URL} from "../../../services/api";
 import "./Step1Crendentias.scss";
 import { useState } from "react";
-import { API_BASE_URL } from "../../../services/api";
 export default function Step1({ nextStep }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

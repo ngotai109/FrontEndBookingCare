@@ -10,6 +10,16 @@
     justify-content: space-between;
     padding: 0 2rem;
 
+    &__nav ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-left: 30px;
+            text-decoration: none;
+        }
+    }
+
     &__logo {
         width: 200px;
         height: 40px;
